@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* To use Box Model */
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #ebf2ff;
+}
+
+.button_primary{
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+}
+.button_primary:hover{
+    border: 2px solid blue;
+}
+
+.container{
+    max-width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    padding: 5px 30px;
+}
+
+.navbar_brand{
+    width: 100px;
+}
+
+.navbar_logo{
+    width: 100%;
+}
+
+.nav_item{
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+.hero_image_cointainer{
+    width: 100%;
+}
+.hero_image{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.hero_text{
+    font-size: 30px;
+    margin: 20px 0;
+}
+@media (min-width: 768px){
+    .navbar{
+        justify-content: space-between;
+        padding: 2px 30px;
+    }
+    .hero_cointainer{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+}
+
+@media(min-width: 1020px){
+    .navbar_brand{
+        width: 150px;
+    }
+    .button_primary{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .hero_description{
+        width: 100%;
+    }
+    .hero_text{
+        font-size: 50px;
+    }
+    .container{
+        max-width: 900px;
+    }
+}
+
+@media(min-width: 1400px){
+    .container{
+        max-width: 1250px;
+    }
+}
